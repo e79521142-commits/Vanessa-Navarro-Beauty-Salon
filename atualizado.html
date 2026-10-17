@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vanessa Navarro Beauty Salon | Corte, Pé e Mão, Maquiagem e Hidratação</title>
+<meta name="description" content="Salão de beleza em Parauapebas. Corte, pé e mão, sobrancelha, hidratação, selagem, botox, maquiagem e pacotes de noiva com atendimento cuidadoso. Agende seu horário pelo WhatsApp.">
+<meta property="og:title" content="Vanessa Navarro Beauty Salon">
+<meta property="og:description" content="Cuidados de beleza com carinho e profissionalismo. Agende seu horário direto pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#405646">
+<link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Vanessa Navarro Beauty Salon","telephone":"+5594991827174","address":{"@type":"PostalAddress","streetAddress":"Avenida República do Brasil N°2003"},"sameAs":["https://www.instagram.com/vanessanavarro_oficial/"]}
+</script>
+<style>
+:root{--verde:#667d68;--escuro:#2f4235;--claro:#e6ede6;--creme:#faf9f6;--bege:#f1ece3;--ouro:#9c7f4e;--texto:#2b2f2b;--suave:#5f665f;--linha:#d9d4c8;--serif:"Fraunces",Georgia,serif;--sans:"Figtree",system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);background:var(--creme);color:var(--texto);line-height:1.6;overflow-x:hidden}
+body.menu-open{overflow:hidden}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+:focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;color:var(--escuro)}
+section{padding:104px 24px}
+.wrap{max-width:1160px;margin:auto}
+.lead{color:var(--suave);max-width:46ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-main{background:var(--escuro);color:#fff}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(47,66,53,.28)}
+.btn-line{border-color:var(--verde);color:var(--escuro)}
+.btn-line:hover{background:var(--claro)}
+svg{width:1em;height:1em;fill:currentColor;flex:none}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(250,249,246,.88);backdrop-filter:blur(14px);border-bottom:1px solid transparent;padding-top:env(safe-area-inset-top,0px);transition:border-color .3s,box-shadow .3s}
+header.scrolled{border-color:var(--linha);box-shadow:0 6px 24px rgba(0,0,0,.05)}
+.nav{max-width:1160px;margin:auto;height:76px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.mono{width:44px;height:44px;border-radius:50%;background:var(--escuro);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:18px}
+.logo b{display:block;font-family:var(--serif);font-weight:500;color:var(--escuro);line-height:1.1}
+.logo small{font-size:12px;color:var(--suave)}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{font-size:14px;font-weight:500;color:var(--suave);transition:color .2s}
+.menu a:hover{color:var(--escuro)}
+.menu .nav-btn{background:var(--escuro);color:#fff;padding:11px 20px;border-radius:999px}
+.menu .nav-btn:hover{color:#fff;background:var(--verde)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;color:var(--escuro);font-size:26px;cursor:pointer}
+
+/* hero */
+.hero{min-height:100svh;padding-top:150px;display:flex;align-items:center;background:radial-gradient(circle at 90% 20%,rgba(102,125,104,.16),transparent 40%),var(--creme)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(48px,7.4vw,96px);letter-spacing:-.02em;margin-bottom:26px}
+.hero h1 em{font-style:italic;color:var(--ouro)}
+.hero .lead{font-size:18px;margin-bottom:36px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-info{display:flex;gap:26px;flex-wrap:wrap;margin-top:44px;padding-top:24px;border-top:1px solid var(--linha);font-size:14px;color:var(--suave)}
+.hero-info b{display:block;color:var(--escuro);font-weight:600}
+.arch{aspect-ratio:4/5;max-height:560px;margin-left:auto;width:100%;border-radius:999px 999px 24px 24px;background:linear-gradient(160deg,var(--verde),var(--escuro));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 30px 70px rgba(47,66,53,.25);position:relative;overflow:hidden}
+.arch::before{content:"";position:absolute;inset:16px;border:1px solid rgba(255,255,255,.28);border-radius:999px 999px 14px 14px}
+.arch .big{font-family:var(--serif);font-size:clamp(64px,9vw,110px);font-style:italic;line-height:1}
+.arch h3{color:#fff;font-size:26px;margin-top:14px}
+.arch p{font-size:13px;opacity:.75;margin-top:6px}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.rise:nth-child(2){animation-delay:.15s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+
+/* sobre */
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.about h2,.menu-sec h2,.book h2,.contact h2{font-size:clamp(34px,4.6vw,54px)}
+.about-text p{color:var(--suave);margin-top:18px;max-width:52ch}
+.pillars{display:grid;gap:0}
+.pillar{padding:26px 0;border-bottom:1px solid var(--linha);display:grid;grid-template-columns:44px 1fr;gap:18px}
+.pillar:first-child{border-top:1px solid var(--linha)}
+.pillar .ic{width:44px;height:44px;border-radius:50%;background:var(--claro);display:grid;place-items:center;font-size:20px;color:var(--escuro)}
+.pillar h3{font-size:22px;margin-bottom:4px}
+.pillar p{color:var(--suave);font-size:15px}
+
+/* serviços */
+.menu-sec{background:var(--bege)}
+.menu-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.price-list{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;list-style:none}
+.price-list li{border-bottom:1px solid var(--linha)}
+.item{width:100%;background:none;border:0;text-align:left;padding:24px 0;cursor:pointer;display:block;color:inherit}
+.row{display:flex;align-items:baseline;gap:12px}
+.row h3{font-size:26px;transition:color .2s}
+.row i{flex:1;border-bottom:2px dotted #c4bdae;transform:translateY(-4px)}
+.row b{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--ouro);white-space:nowrap}
+.item p{color:var(--suave);font-size:14px;margin-top:4px}
+.item:hover h3{color:var(--ouro)}
+.item .go{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;color:var(--escuro);opacity:0;transition:opacity .2s}
+.item:hover .go,.item:focus-visible .go{opacity:1}
+@media(hover:none){.item .go{opacity:1}}
+
+/* agendamento */
+.book{background:#fff}
+.book-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.book .lead{margin-top:18px}
+.note{margin-top:28px;padding:18px 20px;border-left:3px solid var(--ouro);background:var(--creme);font-size:14px;color:var(--suave)}
+.form{background:var(--creme);border:1px solid var(--linha);border-radius:24px;padding:36px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{display:flex;flex-direction:column;gap:7px}
+.f.full{grid-column:1/-1}
+label{font-size:13px;font-weight:600;color:var(--escuro)}
+input,select,textarea{width:100%;padding:14px;border:1px solid #cfcabd;border-radius:12px;background:#fff;color:var(--texto);font-size:16px;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--verde);box-shadow:0 0 0 3px rgba(102,125,104,.18)}
+input:user-invalid,select:user-invalid{border-color:#b4533f}
+textarea{min-height:100px;resize:vertical}
+.form .btn{width:100%;margin-top:22px}
+.small{text-align:center;margin-top:12px;font-size:13px;color:var(--suave)}
+
+/* frase */
+.quote{background:var(--escuro);text-align:center;padding:96px 24px}
+.quote h2{color:#fff;font-size:clamp(30px,4.6vw,52px);font-weight:400;max-width:20ch;margin:auto}
+.quote p{margin-top:20px;color:rgba(255,255,255,.7);font-size:14px}
+
+/* contato */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.contact .lead{margin:18px 0 32px}
+.ci{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start}
+.ci .ic{min-width:44px;height:44px;border-radius:50%;background:var(--claro);display:grid;place-items:center;font-size:19px;color:var(--escuro)}
+.ci b{display:block;color:var(--escuro)}
+.ci span,.ci a{color:var(--suave);font-size:15px}
+.ci a:hover{color:var(--escuro);text-decoration:underline}
+.cbox{background:var(--bege);border-radius:24px;padding:44px}
+.cbox h3{font-size:34px;margin-bottom:12px}
+.cbox p{color:var(--suave);margin-bottom:26px}
+.social{display:flex;gap:12px;margin-top:24px}
+.social a{width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid var(--linha);display:grid;place-items:center;font-size:20px;color:var(--escuro);transition:background .2s,color .2s}
+.social a:hover{background:var(--escuro);color:#fff}
+
+/* footer */
+footer{background:#222f27;color:#fff;padding:56px 24px 24px}
+.fgrid{max-width:1160px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px}
+footer h3{font-family:var(--serif);color:#fff;font-size:28px;margin-bottom:10px}
+footer h4{margin-bottom:14px;font-size:15px}
+footer p,.fl a{color:rgba(255,255,255,.68);font-size:14px}
+.fl{display:flex;flex-direction:column;gap:9px}
+.fl a:hover{color:#fff}
+.copy{max-width:1160px;margin:44px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.55);font-size:13px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:#1fa855;color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 10px 28px rgba(31,168,85,.35);transition:transform .2s}
+.wa:hover{transform:scale(1.07)}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rise{animation:none}*{transition:none!important}}
+
+@media(max-width:980px){
+.hero{padding-top:120px;min-height:auto}
+.hero-grid,.about-grid,.book-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
+.arch{max-width:380px;margin:0 auto}
+.price-list{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+.nav{height:68px}
+.burger{display:block}
+.menu{position:absolute;top:calc(68px + env(safe-area-inset-top,0px));left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 28px;box-shadow:0 20px 30px rgba(0,0,0,.08);display:none;max-height:calc(100svh - 68px);overflow-y:auto}
+.menu.open{display:flex}
+.menu a{padding:15px 0;border-bottom:1px solid #eee;font-size:16px}
+.menu .nav-btn{margin-top:14px;text-align:center;border:0}
+section{padding:76px 20px}
+.fg{grid-template-columns:1fr}
+.f.full{grid-column:auto}
+.form{padding:24px 18px}
+.cbox{padding:30px 22px}
+.fgrid{grid-template-columns:1fr;gap:32px}
+.copy{flex-direction:column}
+}
+@media(max-width:420px){
+.logo small{display:none}
+.actions .btn{width:100%}
+}
+html{-webkit-text-size-adjust:100%}
+a,button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.more{margin-top:28px;color:var(--suave);font-size:15px}
+.row b small{font-family:var(--sans);font-size:12px;font-weight:500;color:var(--suave);margin-right:2px}
+.dock{display:none}
+
+@media(max-width:760px){
+body{padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+.wa{display:none}
+.dock{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:45;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(250,249,246,.94);backdrop-filter:blur(14px);border-top:1px solid var(--linha);transition:transform .3s}
+.dock.hide{transform:translateY(110%)}
+.dock .btn{flex:1;padding:13px 10px;min-height:50px;font-size:15px}
+.dock .btn-line{background:#fff}
+.btn{min-height:48px}
+
+.hero{padding:100px 20px 56px}
+.hero h1{font-size:clamp(42px,13vw,56px);margin-bottom:18px}
+.hero .lead{font-size:16px;margin-bottom:26px}
+.actions{flex-direction:column}
+.actions .btn{width:100%}
+.hero-info{display:grid;gap:14px;margin-top:30px;padding-top:20px}
+.arch{max-width:250px}
+.arch h3{font-size:22px}
+
+section{padding:60px 20px}
+.about h2,.menu-sec h2,.book h2,.contact h2{font-size:clamp(30px,9vw,38px)}
+.about-grid,.book-grid,.contact-grid{gap:32px}
+.pillar{padding:20px 0;gap:14px}
+.menu-head{margin-bottom:20px}
+.item{padding:18px 0;min-height:64px}
+.row h3{font-size:22px}
+.row b{font-size:20px}
+.item .go{opacity:1;margin-top:6px}
+
+.form{padding:22px 16px;border-radius:20px}
+.fg{grid-template-columns:1fr 1fr;gap:14px}
+.f,.f.full{grid-column:1/-1}
+.f.half{grid-column:auto}
+input,select,textarea{padding:15px 14px;min-height:52px}
+textarea{min-height:96px}
+.note{margin-top:20px}
+.quote{padding:64px 20px}
+.cbox{padding:28px 20px}
+.ci{margin-bottom:18px}
+footer{padding:44px 20px 20px}
+}
+@media(max-width:360px){.f.half{grid-column:1/-1}}
+</style>
+</head>
+<body>
+
+<header id="topo">
+<nav class="nav">
+  <a href="#inicio" class="logo" aria-label="Vanessa Navarro Beauty Salon, início">
+    <span class="mono">VN</span>
+    <span><b>Vanessa Navarro</b><small>Beauty Salon</small></span>
+  </a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span></button>
+  <div class="menu" id="menu">
+    <a href="#inicio">Início</a>
+    <a href="#conheca">Conheça-nos</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#agendamento">Agendamento</a>
+    <a href="#contato">Contato</a>
+    <a href="#agendamento" class="nav-btn">Agendar horário</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="wrap hero-grid">
+  <div class="rise">
+    <h1>Realce sua <em>beleza.</em></h1>
+    <p class="lead">Um espaço criado para você se sentir ainda mais especial. Cuidamos da sua beleza com carinho, profissionalismo e dedicação.</p>
+    <div class="actions">
+      <a href="#agendamento" class="btn btn-main">Agendar horário</a>
+      <a href="#servicos" class="btn btn-line">Ver serviços e valores</a>
+    </div>
+    <div class="hero-info">
+      <div><b>Onde estamos</b>Avenida República do Brasil N°2003</div>
+      <div><b>WhatsApp</b>(94) 99182-7174</div>
+    </div>
+  </div>
+  <div class="arch rise" aria-hidden="true">
+    <div class="big">VN</div>
+    <h3>Vanessa Navarro</h3>
+    <p>Beleza • Cuidado • Bem-estar</p>
+  </div>
+</div>
+</section>
+
+<section class="about" id="conheca">
+<div class="wrap about-grid">
+  <div class="about-text">
+    <h2>Cuidar de você é o nosso propósito.</h2>
+    <p>É um privilégio receber você no Vanessa Navarro Beauty Salon. Consolidamos nossa trajetória com base na confiança, dedicação e alta qualidade.</p>
+    <p>Nosso objetivo é oferecer um atendimento de alto padrão, onde o cuidado com a sua imagem é tratado com o máximo profissionalismo. Sua beleza natural merece atenção especial.</p>
+  </div>
+  <div class="pillars">
+    <div class="pillar"><span class="ic" aria-hidden="true">✦</span><div><h3>Qualidade</h3><p>Produtos e serviços de qualidade, sempre em busca de excelentes resultados.</p></div></div>
+    <div class="pillar"><span class="ic" aria-hidden="true">♡</span><div><h3>Carinho</h3><p>Cada atendimento é pensado para você se sentir acolhida e valorizada.</p></div></div>
+    <div class="pillar"><span class="ic" aria-hidden="true">❀</span><div><h3>Bem-estar</h3><p>Um ambiente tranquilo para transformar seu momento de beleza em uma experiência especial.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section class="menu-sec" id="servicos">
+<div class="wrap">
+  <div class="menu-head">
+    <h2>Serviços e valores</h2>
+    <p class="lead">Toque em um serviço para já selecionar no agendamento.</p>
+  </div>
+  <ul class="price-list" id="priceList"></ul>
+  <p class="more">Temos hidratação de várias outras marcas. Chame no WhatsApp para consultar opções e valores.</p>
+</div>
+</section>
+
+<section class="book" id="agendamento">
+<div class="wrap book-grid">
+  <div>
+    <h2>Reserve seu momento de beleza.</h2>
+    <p class="lead">Preencha os dados e envie. O WhatsApp abre com todas as informações do seu agendamento já escritas.</p>
+    <p class="note">O horário só é confirmado depois que a equipe responder sua mensagem no WhatsApp.</p>
+  </div>
+  <form class="form" id="form" novalidate>
+    <div class="fg">
+      <div class="f"><label for="nome">Nome completo</label><input id="nome" autocomplete="name" placeholder="Seu nome" required></div>
+      <div class="f"><label for="tel">Seu WhatsApp</label><input id="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="(94) 99999-9999" required></div>
+      <div class="f full"><label for="servico">Serviço</label><select id="servico" required><option value="">Selecione um serviço</option></select></div>
+      <div class="f half"><label for="data">Data desejada</label><input id="data" type="date" required></div>
+      <div class="f half"><label for="horario">Horário desejado</label><select id="horario" required><option value="">Selecione um horário</option></select></div>
+      <div class="f full"><label for="pag">Forma de pagamento</label>
+        <select id="pag"><option>A combinar</option><option>Pix</option><option>Dinheiro</option><option>Cartão</option></select></div>
+      <div class="f full"><label for="obs">Observações (opcional)</label><textarea id="obs" placeholder="Alguma informação adicional?"></textarea></div>
+    </div>
+    <button type="submit" class="btn btn-main">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.300 2.400 1.500.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.400Z"/></svg>
+      Enviar agendamento pelo WhatsApp
+    </button>
+    <p class="small">Seu agendamento será enviado para confirmação.</p>
+  </form>
+</div>
+</section>
+
+<section class="quote">
+  <h2>“Cuide de você. Você merece esse momento.”</h2>
+  <p>Vanessa Navarro Beauty Salon</p>
+</section>
+
+<section class="contact" id="contato">
+<div class="wrap contact-grid">
+  <div>
+    <h2>Vamos cuidar de você?</h2>
+    <p class="lead">Entre em contato para consultar horários, tirar dúvidas ou agendar seu atendimento.</p>
+    <div class="ci"><span class="ic" aria-hidden="true">⌖</span><div><b>Endereço</b><span>Avenida República do Brasil N°2003</span></div></div>
+    <div class="ci"><span class="ic" aria-hidden="true">✆</span><div><b>Telefone</b><a href="tel:+5594991827174">(94) 99182-7174</a></div></div>
+    <div class="ci"><span class="ic" aria-hidden="true">◎</span><div><b>Instagram</b><a href="https://www.instagram.com/vanessanavarro_oficial/" target="_blank" rel="noopener">@vanessanavarro_oficial</a></div></div>
+  </div>
+  <div class="cbox">
+    <h3>Agende seu horário</h3>
+    <p>Escolha seu serviço e envie seu agendamento diretamente pelo WhatsApp.</p>
+    <a href="#agendamento" class="btn btn-main">Agendar agora</a>
+    <div class="social">
+      <a href="https://www.instagram.com/vanessanavarro_oficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.500A4.500 4.500 0 1 1 7.500 12 4.500 4.500 0 0 1 12 7.500Zm0 2A2.500 2.500 0 1 0 14.500 12 2.500 2.500 0 0 0 12 9.500ZM17.300 5.800a1.100 1.100 0 1 1-1.100 1.100 1.100 1.100 0 0 1 1.100-1.100Z"/></svg></a>
+      <a href="https://wa.me/5594991827174" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm5.800 14.100c-.2.700-1.400 1.300-2 1.400-.5.100-1.200.1-1.900-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5.100-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.100.5.200.5.300.1.200.1.800-.1 1.400Z"/></svg></a>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="fgrid">
+  <div><h3>Vanessa Navarro</h3><p>Beauty Salon dedicado a cuidar da sua beleza, autoestima e bem-estar.</p></div>
+  <div><h4>Navegação</h4><div class="fl"><a href="#inicio">Início</a><a href="#conheca">Conheça-nos</a><a href="#servicos">Serviços</a><a href="#agendamento">Agendamento</a><a href="#contato">Contato</a></div></div>
+  <div><h4>Atendimento</h4><div class="fl"><a href="tel:+5594991827174">(94) 99182-7174</a><a href="https://www.instagram.com/vanessanavarro_oficial/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/5594991827174" target="_blank" rel="noopener">WhatsApp</a></div></div>
+</div>
+<div class="copy"><span>© 2026 Vanessa Navarro Beauty Salon</span><span>Designed By: Emanuel Navarro LTDA®</span></div>
+</footer>
+
+<a href="https://wa.me/5594991827174" target="_blank" rel="noopener" class="wa" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm5.800 14.100c-.2.700-1.400 1.300-2 1.400-.5.100-1.200.1-1.900-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5.100-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.100.5.200.5.300.1.200.1.800-.1 1.400Z"/></svg></a>
+
+<div class="dock" id="dock">
+  <a href="#agendamento" class="btn btn-main">Agendar horário</a>
+  <a href="https://wa.me/5594991827174" target="_blank" rel="noopener" class="btn btn-line">WhatsApp</a>
+</div>
+
+<script>
+const NUMERO = "5594991827174";
+const SERVICOS = [
+  ["Corte","Corte personalizado para o seu estilo.","R$ 70,00"],
+  ["Pé e mão","Manicure e pedicure, com cuidado e esmaltação.","R$ 70,00"],
+  ["Designer de sobrancelha","Sobrancelhas desenhadas para valorizar o seu rosto.","R$ 40,00"],
+  ["Hidratação Wella","Hidratação com produtos Wella, escova inclusa.","R$ 160,00"],
+  ["Hidratação Loreal","Hidratação com produtos L'Oréal, escova inclusa.","R$ 200,00"],
+  ["Selagem","Tratamento para deixar os fios alinhados e com menos frizz.","a partir de R$ 250,00"],
+  ["Alinhamento","Alinhamento dos fios para um visual liso e natural.","a partir de R$ 250,00"],
+  ["Botox","Tratamento para deixar os fios mais macios e com brilho.","a partir de R$ 200,00"],
+  ["Maquiagem","Maquiagem para deixar seu visual ainda mais bonito.","R$ 180,00"],
+  ["Penteado","Penteado para ocasiões especiais, com preparação inclusa.","R$ 220,00"],
+  ["Pacotes de noiva","Cuidados completos para o grande dia. Consulte valores.","Sob consulta"],
+  ["Pacote de mechas","Realce seus cabelos com lindas mechas.","a partir de R$ 680,00"]
+];
+const HORARIOS = ["08:00","08:30","09:00","09:30","10:00","10:30","11:00","11:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30"];
+const $ = id => document.getElementById(id);
+
+/* serviços: uma única lista alimenta o cardápio e o formulário */
+const lista = $("priceList"), selServ = $("servico");
+SERVICOS.forEach(([nome, desc, preco]) => {
+  const li = document.createElement("li");
+  li.innerHTML = `<button type="button" class="item" data-s="${nome}">
+    <span class="row"><h3>${nome}</h3><i></i><b>${preco.replace(/^a partir de /,"<small>a partir de</small> ")}</b></span>
+    <p>${desc}</p><span class="go">Agendar este serviço</span></button>`;
+  lista.appendChild(li);
+  selServ.add(new Option(`${nome} — ${preco}`, `${nome} — ${preco}`));
+});
+lista.addEventListener("click", e => {
+  const b = e.target.closest(".item"); if (!b) return;
+  [...selServ.options].forEach(o => { if (o.value.startsWith(b.dataset.s + " —")) selServ.value = o.value; });
+  $("agendamento").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth"});
+  setTimeout(() => $("nome").focus({preventScroll:true}), 500);
+});
+
+/* menu mobile */
+const burger = $("burger"), menu = $("menu");
+function setMenu(open){
+  menu.classList.toggle("open", open);
+  document.body.classList.toggle("menu-open", open);
+  burger.firstElementChild.textContent = open ? "✕" : "☰";
+  burger.setAttribute("aria-expanded", open);
+  burger.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+}
+burger.onclick = () => setMenu(!menu.classList.contains("open"));
+menu.querySelectorAll("a").forEach(a => a.onclick = () => setMenu(false));
+addEventListener("keydown", e => e.key === "Escape" && setMenu(false));
+addEventListener("resize", () => innerWidth > 760 && setMenu(false));
+
+/* header ao rolar */
+const topo = $("topo");
+addEventListener("scroll", () => topo.classList.toggle("scrolled", scrollY > 30), {passive:true});
+
+/* data mínima = hoje (fuso local) e horários que já passaram ficam ocultos */
+const dataEl = $("data"), horEl = $("horario");
+const pad = n => String(n).padStart(2, "0");
+const agora = new Date();
+const hojeStr = `${agora.getFullYear()}-${pad(agora.getMonth()+1)}-${pad(agora.getDate())}`;
+dataEl.min = hojeStr;
+function montarHorarios(){
+  const atual = horEl.value;
+  horEl.length = 1;
+  const ehHoje = dataEl.value === hojeStr, n = new Date();
+  HORARIOS.forEach(h => {
+    const [hh, mm] = h.split(":").map(Number);
+    if (ehHoje && (hh*60 + mm) <= (n.getHours()*60 + n.getMinutes())) return;
+    horEl.add(new Option(h, h));
+  });
+  if ([...horEl.options].some(o => o.value === atual)) horEl.value = atual;
+}
+dataEl.addEventListener("change", montarHorarios);
+montarHorarios();
+
+/* máscara de telefone: (99) 99999-9999 */
+$("tel").addEventListener("input", e => {
+  let v = e.target.value.replace(/\D/g, "").slice(0, 11);
+  if (v.length > 6) v = v.replace(/^(\d{2})(\d{4,5})(\d{4}).*/, "($1) $2-$3");
+  else if (v.length > 2) v = v.replace(/^(\d{2})(\d+)/, "($1) $2");
+  else if (v.length) v = `(${v}`;
+  e.target.value = v;
+});
+
+/* envio pelo WhatsApp */
+$("form").addEventListener("submit", e => {
+  e.preventDefault();
+  const tel = $("tel");
+  tel.setCustomValidity(tel.value.replace(/\D/g, "").length < 10 ? "Digite o número com DDD." : "");
+  if (!e.target.reportValidity()) return;
+  const [a, m, d] = dataEl.value.split("-");
+  const obs = $("obs").value.trim();
+  let msg = "Olá! Gostaria de solicitar um agendamento no Vanessa Navarro Beauty Salon.\n\n"
+    + `👤 *Nome:* ${$("nome").value.trim()}\n`
+    + `📱 *WhatsApp:* ${tel.value.trim()}\n`
+    + `💇 *Serviço:* ${selServ.value}\n`
+    + `📅 *Data:* ${d}/${m}/${a}\n`
+    + `⏰ *Horário:* ${horEl.value}\n`
+    + `💳 *Pagamento:* ${$("pag").value}\n`;
+  if (obs) msg += `📝 *Observações:* ${obs}\n`;
+  msg += "\n*Aguardo a confirmação do horário. Obrigado(a)!*";
+  window.open(`https://wa.me/${NUMERO}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+});
+$("tel").addEventListener("input", e => e.target.setCustomValidity(""));
+
+/* barra fixa some quando já há um botão de agendar visível */
+const dock = $("dock"), vis = new Set();
+const io = new IntersectionObserver(es => {
+  es.forEach(e => e.isIntersecting ? vis.add(e.target.id) : vis.delete(e.target.id));
+  dock.classList.toggle("hide", vis.size > 0);
+}, {threshold:.2});
+io.observe($("inicio"));
+io.observe($("agendamento"));
+
+</script>
+</body>
+</html>
